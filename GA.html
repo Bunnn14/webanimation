@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Wave Pattern with Circles</title>
+    <style>
+        .pattern-container {
+            border: 5px solid darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 300px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pattern-container">
+        <svg width="200" height="300">
+     
+            <defs>
+                <pattern id="sharp-wave-pattern" width="40" height="80" patternUnits="userSpaceOnUse">
+                    <polygon points="0,0 20,60 40,0" fill="dodgerblue" />
+                    <polygon points="0,60 20,0 40,60" fill="darkblue" />
+                    <circle cx="10" cy="30" r="5" fill="white" />
+                    <circle cx="30" cy="30" r="5" fill="white" />
+                </pattern>
+            </defs>
+            <rect width="200" height="300" fill="url(#sharp-wave-pattern)" />
+        </svg>
+    </div>
+
+</body>
+</html>
